@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	$("body").on('click', '.toggle-password', function() {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $("#pass_log_id");
+  if (input.attr("type") === "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+
+});
+</script>
+
+ 	<title>Jqueryy</title>
+ </head>
+ <body>
+ <div>
+ 	<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password">Show/Hide</span>
+<input type="password" id="pass_log_id"/>
+ </div>
+ </body>
+ </html>
